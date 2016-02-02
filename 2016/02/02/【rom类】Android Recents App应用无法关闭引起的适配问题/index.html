@@ -58,17 +58,13 @@
 
 
 <meta name="description" content="版权声明：本文为博主原创文章，未经博主允许不得转载。在使用Android手机时，你是否被这样坑过：说好的结束应用进程就可以将程序关闭，为神马打开一看还是开启状态？
-在操作系统中，快速关闭某个应用程序，Android系统为我们提供了直接操作RecentsApp功能，即”近期任务列表”、”最近使用程序”。用户通过长按菜单键，唤起任务列表，滑动应用即可达到关闭程序的目的。
-
-虽然在开发中我们会认为通过R">
+在操作系统中，快速关闭某个应用程序，Android系统为我们提供了直接操作RecentsApp功能，即”近期任务列表”、”最近使用程序”。用户通过长按菜单键，唤起任务列表，滑动应用即可达到关闭程序的目的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【rom类】Android Recents App应用无法关闭引起的适配问题">
 <meta property="og:url" content="http://wyhuan.github.io/2016/02/02/【rom类】Android Recents App应用无法关闭引起的适配问题/index.html">
 <meta property="og:site_name" content="吴宇焕">
 <meta property="og:description" content="版权声明：本文为博主原创文章，未经博主允许不得转载。在使用Android手机时，你是否被这样坑过：说好的结束应用进程就可以将程序关闭，为神马打开一看还是开启状态？
-在操作系统中，快速关闭某个应用程序，Android系统为我们提供了直接操作RecentsApp功能，即”近期任务列表”、”最近使用程序”。用户通过长按菜单键，唤起任务列表，滑动应用即可达到关闭程序的目的。
-
-虽然在开发中我们会认为通过R">
+在操作系统中，快速关闭某个应用程序，Android系统为我们提供了直接操作RecentsApp功能，即”近期任务列表”、”最近使用程序”。用户通过长按菜单键，唤起任务列表，滑动应用即可达到关闭程序的目的。">
 <meta property="og:image" content="http://img.blog.csdn.net/20160202162034249">
 <meta property="og:image" content="http://img.blog.csdn.net/20160202162205590">
 <meta property="og:image" content="http://img.blog.csdn.net/20160202162225809">
@@ -76,13 +72,11 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20160202162312203">
 <meta property="og:image" content="http://img.blog.csdn.net/20160202162330219">
 <meta property="og:image" content="http://img.blog.csdn.net/20160202162348935">
-<meta property="og:updated_time" content="2016-02-02T08:30:08.000Z">
+<meta property="og:updated_time" content="2016-02-02T08:41:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【rom类】Android Recents App应用无法关闭引起的适配问题">
 <meta name="twitter:description" content="版权声明：本文为博主原创文章，未经博主允许不得转载。在使用Android手机时，你是否被这样坑过：说好的结束应用进程就可以将程序关闭，为神马打开一看还是开启状态？
-在操作系统中，快速关闭某个应用程序，Android系统为我们提供了直接操作RecentsApp功能，即”近期任务列表”、”最近使用程序”。用户通过长按菜单键，唤起任务列表，滑动应用即可达到关闭程序的目的。
-
-虽然在开发中我们会认为通过R">
+在操作系统中，快速关闭某个应用程序，Android系统为我们提供了直接操作RecentsApp功能，即”近期任务列表”、”最近使用程序”。用户通过长按菜单键，唤起任务列表，滑动应用即可达到关闭程序的目的。">
 
 
 
@@ -231,7 +225,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-02T16:30:08+08:00" content="2016-02-02">
+            <time itemprop="dateCreated" datetime="2016-02-02T16:41:22+08:00" content="2016-02-02">
               2016-02-02
             </time>
           </span>
@@ -285,8 +279,7 @@
       
         <p>版权声明：本文为博主原创文章，未经博主允许不得转载。<br>在使用Android手机时，你是否被这样坑过：说好的结束应用进程就可以将程序关闭，为神马打开一看还是开启状态？</p>
 <p>在操作系统中，快速关闭某个应用程序，Android系统为我们提供了直接操作RecentsApp功能，即”近期任务列表”、”最近使用程序”。用户通过长按菜单键，唤起任务列表，滑动应用即可达到关闭程序的目的。</p>
-<p><img src="http://img.blog.csdn.net/20160202162034249" alt="这里写图片描述"></p>
-<p>虽然在开发中我们会认为通过RecentsApp操作关闭的应用程序即是杀掉进程，应用程序相关的资源都会被释放。但事实情况却不尽如人意，在某些机型上会发生如下情况：</p>
+<p><img src="http://img.blog.csdn.net/20160202162034249" alt="这里写图片描述"><br><a id="more"></a><br>虽然在开发中我们会认为通过RecentsApp操作关闭的应用程序即是杀掉进程，应用程序相关的资源都会被释放。但事实情况却不尽如人意，在某些机型上会发生如下情况：</p>
 <p>“通过RecentsApp操作关闭的应用程序，该应用程序在通知栏里的消息不消失，查看应用程序详细情况，发现该应用程序依然存活，手动强制关闭应用程序才可以完成关闭掉，通知栏消息也会随之消失”。</p>
 <p>以Android4.4的系统源码为例，我们一起看一下唤起RecentsApp，滑动关闭应用，系统是如何处理的。</p>
 <ul>
